@@ -1,0 +1,80 @@
+title: Edurt Docs Jekyll
+email: shicheng@ttxit.com
+author: qianmoQ
+description: "Jekyll文档主题"
+
+# 网站的访问地址
+baseurl: "/ejdoc"
+
+# 修改页面的跳转地址
+url: "https://github.com/EdurtIO/incubator-ejdoc.git"
+
+# 顶部右侧GitHub配置相关
+repo: "https://github.com/EdurtIO/incubator-ejdoc.git"
+github_user: "EdurtIO"
+github_repo: "incubator-ejdoc"
+
+# 联系方式
+twitter: EdurtIO
+linkedin: EdurtIO
+dockerhub: EdurtIO
+
+# 是否显示Feedback按钮
+feedback: true
+
+# 在页脚显示隐私政策
+privacy: https://domain.com/privacy
+
+# Google分析插件
+# google-analytics: UA-XXXXXXXXXX
+
+# 图标文件地址，不能使用/开头
+# logo: "assets/img/logo/SRCC-square-red.png"
+# 图片的像素
+logo_pixels: 34
+# 按钮的主颜色
+color: "#30638e"
+
+# Markdown源文件解析配置
+markdown: kramdown
+
+# 外部搜索标签配置
+# tag_search_endpoint: xxx.domain/search=?
+# 标签颜色，可用danger, success, warning, primary, info, secondary
+tag_color: primary
+
+# 页面颜色配置
+accentColor: red # purple, green, etc.
+themeColor: red # purple, green, blue, orange, purple, grey
+# 是否固定顶部菜单
+fixedNav: 'true' # true ｜ false
+
+permalink: /:year/:title/
+markdown: kramdown
+exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
+
+# 链接配置
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path
+
+# 默认菜单配置
+defaults:
+  - scope:
+      path: "_docs"
+      type: "docs"
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "posts"
+      type: "posts"
+    values:
+      layout: "post"

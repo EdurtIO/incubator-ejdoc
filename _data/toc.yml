@@ -1,0 +1,10 @@
+- title: 文档中心
+  url: docs
+  links:
+    - title: "测试"
+      url: "docs/test"
+#      children:
+#        - title: 测试
+#          url: "docs/test"
+    - title: "关于"
+      url: "about"
